@@ -139,13 +139,7 @@ const Header = () => {
     <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-white py-4'}`}>
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
-          <div className="bg-primary p-2 rounded-lg text-white">
-            <Tractor size={28} />
-          </div>
-          <div>
-            <div className="font-display font-extrabold text-xl text-primary leading-none">АГРОТЕХНИКА</div>
-            <div className="text-[10px] text-gray-custom uppercase tracking-wider font-medium">Профессиональное оборудование</div>
-          </div>
+          <img src="/logo.svg" alt="АГРОТЕХНИКА" className="h-14" />
         </div>
 
         <nav className="hidden lg:flex items-center gap-8 font-medium text-dark">
@@ -187,8 +181,7 @@ const Header = () => {
           >
             <div className="flex justify-between items-center mb-8">
               <div className="flex items-center gap-3">
-                <Tractor size={28} className="text-primary" />
-                <span className="font-display font-bold text-xl">АГРОТЕХНИКА</span>
+                <img src="/logo.svg" alt="АГРОТЕХНИКА" className="h-10" />
               </div>
               <button onClick={() => setIsMobileMenuOpen(false)}>
                 <X size={28} />
